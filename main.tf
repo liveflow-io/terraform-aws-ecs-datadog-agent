@@ -28,9 +28,12 @@ locals {
   )
 
   container_definition = {
-    name                 = var.name
-    image                = "${var.docker_image_name}:${var.docker_image_tag}",
-    memoryReservation    = 128,
+    name              = var.name
+    image             = "${var.docker_image_name}:${var.docker_image_tag}",
+    memoryReservation = 128,
+    memory            = var.memory
+    cpu               = var.cpu
+
     essential            = var.essential,
     resourceRequirements = var.resource_requirements
 

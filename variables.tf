@@ -14,6 +14,16 @@ variable "environment" {
   default = {}
 }
 
+variable "memory" {
+  type    = number
+  default = 256
+}
+
+variable "cpu" {
+  type    = number
+  default = 256
+}
+
 variable "secret_names" {
   type    = list(string)
   default = []
