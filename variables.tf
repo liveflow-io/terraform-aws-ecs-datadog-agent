@@ -9,7 +9,6 @@ variable "app_name" {
   type = string
 }
 
-
 variable "environment" {
   type    = map(string)
   default = {}
@@ -18,6 +17,11 @@ variable "environment" {
 variable "secret_names" {
   type    = list(string)
   default = []
+}
+
+variable "essential" {
+  type    = bool
+  default = true
 }
 
 //variable "ecs_cluster" {

@@ -31,7 +31,7 @@ locals {
     name                 = var.name
     image                = "${var.docker_image_name}:${var.docker_image_tag}",
     memoryReservation    = 128,
-    essential            = true,
+    essential            = var.essential,
     resourceRequirements = var.resource_requirements
 
     environment = [
