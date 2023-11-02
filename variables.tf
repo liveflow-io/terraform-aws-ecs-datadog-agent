@@ -75,3 +75,8 @@ variable "opentelemetry_http_endpoint" {
 variable "enabled" {
   default = true
 }
+
+variable "docker_labels" {
+  type    = map(string)
+  default = {}
+}

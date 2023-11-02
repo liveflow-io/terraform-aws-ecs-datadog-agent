@@ -104,6 +104,8 @@ locals {
         awslogs-stream-prefix = var.name
       }
     }
+
+    dockerLabels = var.docker_labels
   }
 
   volumes = concat(var.ecs_launch_type == "FARGATE" ? [] : [
