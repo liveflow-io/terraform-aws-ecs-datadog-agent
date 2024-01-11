@@ -37,6 +37,8 @@ locals {
     essential            = var.essential,
     resourceRequirements = var.resource_requirements
 
+    healthCheck = var.health_check
+
     environment = [
       for k, v in local.environment : {
         name  = k,

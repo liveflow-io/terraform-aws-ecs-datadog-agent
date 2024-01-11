@@ -80,3 +80,8 @@ variable "docker_labels" {
   type    = map(string)
   default = {}
 }
+variable "health_check" {
+  description = "The container health check command and associated configuration parameters for the container. See [HealthCheck](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_HealthCheck.html)"
+  type        = any
+  default     = {}
+}
