@@ -16,6 +16,7 @@ locals {
     DD_RUNTIME_METRICS_ENABLED                      = "true"
     DD_PROFILING_ENABLED                            = "true"
     DD_LOGS_INJECTION                               = "true"
+    DD_ECS_TASK_COLLECTION_ENABLED                  = "true"
     DD_OTLP_CONFIG_RECEIVER_PROTOCOLS_GRPC_ENDPOINT = var.opentelemetry_grpc_endpoint
     DD_OTLP_CONFIG_RECEIVER_PROTOCOLS_HTTP_ENDPOINT = var.opentelemetry_http_endpoint
 
